@@ -149,34 +149,33 @@ window.addEventListener("scroll", () => {
 // Language Button (Demo)
 // ==============================
 
-const languageBtn = document.getElementById("languageBtn");
+const language = document.getElementById("language");
 
-let currentLanguage = "en";
+language.addEventListener("change", function () {
 
-if (languageBtn) {
+    if (this.value === "en") {
 
-    languageBtn.addEventListener("click", () => {
+        alert("English");
 
-        if (currentLanguage === "en") {
+    }
 
-            currentLanguage = "ar";
+    if (this.value === "ar") {
 
-            languageBtn.innerHTML = "🌐 العربية";
+        alert("العربية");
 
-            alert("Arabic language will be available soon.");
+    }
 
-        }
+    if (this.value === "de") {
 
-        else {
+        alert("Deutsch");
 
-            currentLanguage = "en";
+    }
 
-            languageBtn.innerHTML = "🌐 English";
+    if (this.value === "ku") {
 
-        }
+        alert("Kurdî");
 
-    });
+    }
 
-}
-
+});
 console.log("Portfolio v0.2 Alpha Loaded Successfully");
