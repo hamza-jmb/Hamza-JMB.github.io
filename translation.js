@@ -1,437 +1,195 @@
-/* ===========================
-   Portfolio v0.2 Alpha
-=========================== */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-    background:#f5f7fb;
-
-    color:#222;
-
-    line-height:1.7;
-
-}
-
-/* ===========================
-   Header
-=========================== */
-
-header{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:18px 10%;
-
-    background:#ffffff;
-
-    box-shadow:0 2px 12px rgba(0,0,0,.08);
-
-    position:sticky;
-
-    top:0;
-
-    z-index:1000;
-
-}
-
-.logo{
-
-    font-size:24px;
-
-    font-weight:bold;
-
-    color:#2563eb;
-
-}
-
-nav{
-
-    display:flex;
-
-    gap:20px;
-
-}
-
-nav a{
-
-    text-decoration:none;
-
-    color:#444;
-
-    font-weight:600;
-
-    transition:.25s;
-
-}
-
-nav a:hover{
-
-    color:#2563eb;
-
-}
-
-#languageBtn{
-
-    background:#2563eb;
-
-    color:white;
-
-    border:none;
-
-    padding:10px 18px;
-
-    border-radius:10px;
-
-    cursor:pointer;
-
-}
-
-#languageBtn:hover{
-
-    opacity:.9;
-
-}
-
-#language {
-    padding: 8px 12px;
-    border-radius: 8px;
-    border: 2px solid #2563eb;
-    background: white;
-    color: #333;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-#language:hover {
-    background: #f0f6ff;
-}
-
-/* ===========================
-   Hero
-=========================== */
-
-.hero{
-
-    text-align:center;
-
-    padding:80px 20px;
-
-}
-
-.hero h1{
-
-    font-size:48px;
-
-    margin-bottom:10px;
-
-}
-
-.hero h2{
-
-    color:#2563eb;
-
-    margin-bottom:15px;
-
-}
-
-.subtitle{
-
-    color:#666;
-
-    font-size:18px;
-
-}
-
-/* ===========================
-   Notice
-=========================== */
-
-.notice{
-
-    width:90%;
-
-    max-width:900px;
-
-    margin:20px auto;
-
-    background:#fff8e7;
-
-    border-left:6px solid orange;
-
-    border-radius:12px;
-
-    padding:25px;
-
-    text-align:center;
-
-}
-
-[dir="rtl"] .notice {
-    border-left: none;
-    border-right: 6px solid orange;
-}
-
-.progress{
-
-    width:100%;
-
-    height:12px;
-
-    background:#ddd;
-
-    border-radius:50px;
-
-    overflow:hidden;
-
-    margin-top:15px;
-
-}
-
-.progress-bar{
-
-    width:40%;
-
-    height:100%;
-
-    background:#2563eb;
-
-}
-
-/* ===========================
-   Cards
-=========================== */
-
-.card{
-
-    width:90%;
-
-    max-width:950px;
-
-    margin:35px auto;
-
-    background:white;
-
-    border-radius:18px;
-
-    padding:35px;
-
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-
-}
-
-.card h2{
-
-    margin-bottom:20px;
-
-    color:#2563eb;
-
-}
-
-/* ===========================
-   Skills
-=========================== */
-
-.skills{
-
-    display:flex;
-
-    flex-wrap:wrap;
-
-    gap:12px;
-
-}
-
-.skills span{
-
-    background:#2563eb;
-
-    color:white;
-
-    padding:10px 18px;
-
-    border-radius:25px;
-
-    font-size:15px;
-
-}
-
-/* ===========================
-   Game
-=========================== */
-
-#info{
-
-    margin:18px;
-
-    font-size:20px;
-
-    font-weight:bold;
-
-}
-
-#arena{
-
-    position:relative;
-
-    width:320px;
-
-    height:360px;
-
-    margin:20px auto;
-
-    border:3px solid #2563eb;
-
-    border-radius:15px;
-
-    background:white;
-
-}
-
-#dot{
-
-    position:absolute;
-
-    width:35px;
-
-    height:35px;
-
-    border-radius:50%;
-
-    background:#00c2ff;
-
-    cursor:pointer;
-
-    transition:.12s;
-
-}
-
-#dot:hover{
-
-    transform:scale(1.08);
-
-}
-
-button{
-
-    background:#2563eb;
-
-    color:white;
-
-    border:none;
-
-    padding:12px 24px;
-
-    border-radius:12px;
-
-    cursor:pointer;
-
-    font-size:16px;
-
-    transition: 0.3s ease;
-
-}
-
-button:hover{
-
-    opacity:.9;
-
-}
-
-/* ===========================
-   Footer
-=========================== */
-
-footer{
-
-    text-align:center;
-
-    padding:40px;
-
-    color:#777;
-
-}
-
-/* ===========================
-   RTL Support
-=========================== */
-
-[dir="rtl"] header {
-    justify-content: flex-end;
-}
-
-[dir="rtl"] nav {
-    flex-direction: row-reverse;
-}
-
-[dir="rtl"] .hero {
-    text-align: center;
-}
-
-[dir="rtl"] .card {
-    text-align: right;
-}
-
-[dir="rtl"] .skills {
-    justify-content: flex-end;
-}
-
-
-
-      /* ===========================
-   Responsive
-=========================== */
-
-@media(max-width:768px){
-
-    header{
-        flex-direction:column;
-        gap:15px;
-        padding:20px;
+// ==============================
+// Translations / الترجمات / چوونه دهق / Übersetzungen
+// ==============================
+
+const translations = {
+    en: {
+        page_title: "Hamza Jasim | Portfolio",
+        nav_about: "About",
+        nav_skills: "Skills",
+        nav_projects: "Projects",
+        nav_contact: "Contact",
+        job_title: "Control & Systems Engineer",
+        subtitle: "Programmer • Automation • AI • Embedded Systems",
+        
+        under_dev_title: "🚧 Portfolio Under Development",
+        under_dev_p1: "Welcome to the early version of my personal website. This portfolio is currently under construction. New projects, features, articles, and improvements will be added gradually.",
+        version_label: "Version",
+        progress_label: "Progress : 40%",
+        
+        about_title: "👋 About Me",
+        about_text: "Hello! I'm Hamza Jasim, a Control & Systems Engineer from Iraq. I enjoy programming, automation, embedded systems, AI, and creating useful software and engineering projects.",
+        
+        skills_title: "🛠 Skills",
+        projects_title: "📂 Projects",
+        projects_coming: "Coming Soon...",
+        
+        game_title: "🎮 Mini Game",
+        game_desc1: "While you're here... Touch the moving dot!",
+        game_desc2: "Can you reach",
+        game_score: "Score",
+        game_time: "Time",
+        btn_play_again: "Play Again",
+        game_over: "Game Over!\n\nScore : ",
+        
+        contact_title: "📞 Contact",
+        contact_p1: "More contact methods will be added soon.",
+        
+        footer_text: "Built with HTML, CSS & JavaScript."
+    },
+
+    ar: {
+        page_title: "حمزة جاسم | المحفظة",
+        nav_about: "عني",
+        nav_skills: "المهارات",
+        nav_projects: "المشاريع",
+        nav_contact: "تواصل",
+        job_title: "مهندس سيطرة ونظم",
+        subtitle: "مبرمج • أتمتة • ذكاء اصطناعي • الأنظمة المدمجة",
+        
+        under_dev_title: "🚧 المحفظة قيد التطوير",
+        under_dev_p1: "مرحبا بك في النسخة الأولى من موقعي الشخصي. محفظتي قيد الإنشاء حاليا. سيتم إضافة مشاريع وميزات وتحسينات جديدة تدريجياً.",
+        version_label: "الإصدار",
+        progress_label: "التقدم : 40%",
+        
+        about_title: "👋 عني",
+        about_text: "مرحبا! أنا حمزة جاسم، مهندس سيطرة ونظم من العراق. أستمتع بالبرمجة والأتمتة والأنظمة المدمجة والذكاء الاصطناعي، وإنشاء مشاريع برمجية وهندسية مفيدة.",
+        
+        skills_title: "🛠 المهارات",
+        projects_title: "📂 المشاريع",
+        projects_coming: "قريباً...",
+        
+        game_title: "🎮 لعبة صغيرة",
+        game_desc1: "بينما أنت هنا... لمس النقطة المتحركة!",
+        game_desc2: "هل يمكنك الوصول إلى",
+        game_score: "النقاط",
+        game_time: "الوقت",
+        btn_play_again: "العب مرة أخرى",
+        game_over: "انتهت اللعبة!\n\nالنقاط : ",
+        
+        contact_title: "📞 تواصل",
+        contact_p1: "سيتم إضافة المزيد من طرق التواصل قريباً.",
+        
+        footer_text: "تم البناء باستخدام HTML و CSS و JavaScript."
+    },
+
+    ku: {
+        page_title: "حمزة جاسم | پۆرتفۆلیۆ",
+        nav_about: "دەربارەی",
+        nav_skills: "تايبەتمەندى",
+        nav_projects: "پروژەکان",
+        nav_contact: "پیوەندی",
+        job_title: "ئەندازیاری کۆنترۆڵ و سیستەمەکان",
+        subtitle: "بەرنامەسازی • خودکاری کردن • تێکچوونی دەستکاری • سیستەمە نهێنیەکان",
+        
+        under_dev_title: "🚧 پۆرتفۆلیۆ لە ژێر کاردانەوە",
+        under_dev_p1: "بەخێرهاتن بۆ وێبسایتی کەسی مت. پۆرتفۆلیۆی مت لە ژێر تۆمار دایە. پروژەکان و تايبەتمەندەکان و بەهێزکردنەکان بە هتوکۆ زیادکراون.",
+        version_label: "وەشان",
+        progress_label: "پیشرەوە : 40%",
+        
+        about_title: "👋 دەربارەی",
+        about_text: "سڵاو! من حمزە جاسم، ئەندازیاری کۆنترۆڵ و سیستەمەکانم لە عیراق. من بە بەرنامەسازی و خودکاری کردن و سیستەمە نهێنیەکان و تێکچوونی دەستکاری دڵگرم، و پروژە بەرنامەسازی و ئەندازیاری سوودبەخش دروست دەکەم.",
+
+
+
+
+skills_title: "🛠 تايبەتمەندى",
+        projects_title: "📂 پروژەکان",
+        projects_coming: "بە زووترە...",
+        
+        game_title: "🎮 یاریکەی بچووک",
+        game_desc1: "لە کاتێکدا کە تۆ لێرە یت... تێ دە خر بۆ خاڵەکەی جونکو!",
+        game_desc2: "ئايا تۆ دەتوانیت بگاتە",
+        game_score: "خاڵ",
+        game_time: "کات",
+        btn_play_again: "جاریەکی تر بیلێ",
+        game_over: "یاری تێپەڕی!\n\nخاڵ : ",
+        
+        contact_title: "📞 پیوەندی",
+        contact_p1: "بۆچوونی زیاتر لە پیوەندی بە زووترە زیاد دەکرێن.",
+        
+        footer_text: "هەڵدراوە بە HTML و CSS و JavaScript."
+    },
+
+    de: {
+        page_title: "Hamza Jasim | Portfolio",
+        nav_about: "Über mich",
+        nav_skills: "Fähigkeiten",
+        nav_projects: "Projekte",
+        nav_contact: "Kontakt",
+        job_title: "Control- und Systemingenieur",
+        subtitle: "Programmierer • Automatisierung • KI • Eingebettete Systeme",
+        
+        under_dev_title: "🚧 Portfolio in Entwicklung",
+        under_dev_p1: "Willkommen zur frühen Version meiner persönlichen Website. Mein Portfolio befindet sich derzeit im Aufbau. Neue Projekte, Funktionen, Artikel und Verbesserungen werden nach und nach hinzugefügt.",
+        version_label: "Version",
+        progress_label: "Fortschritt : 40%",
+        
+        about_title: "👋 Über mich",
+        about_text: "Hallo! Ich bin Hamza Jasim, ein Control- und Systemingenieur aus dem Irak. Ich begeistere mich für Programmierung, Automatisierung, eingebettete Systeme, KI und die Erstellung nützlicher Software- und Ingenieurprojekte.",
+        
+        skills_title: "🛠 Fähigkeiten",
+        projects_title: "📂 Projekte",
+        projects_coming: "Kommt bald...",
+        
+        game_title: "🎮 Mini-Spiel",
+        game_desc1: "Während du hier bist... Berühre den beweglichen Punkt!",
+        game_desc2: "Kannst du erreichen",
+        game_score: "Punkte",
+        game_time: "Zeit",
+        btn_play_again: "Nochmal Spielen",
+        game_over: "Spiel vorbei!\n\nPunkte : ",
+        
+        contact_title: "📞 Kontakt",
+        contact_p1: "Weitere Kontaktmöglichkeiten werden bald hinzugefügt.",
+        
+        footer_text: "Erstellt mit HTML, CSS & JavaScript."
     }
+};
 
-    nav{
-        flex-wrap:wrap;
-        justify-content:center;
+// ==============================
+// Translation Function
+// ==============================
+
+function updateLanguage(lang) {
+    // Update HTML lang attribute
+    document.documentElement.lang = lang;
+    
+    // Save language preference
+    localStorage.setItem('language', lang);
+    
+    // Update all elements with data-i18n attribute
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+            element.textContent = translations[lang][key];
+        }
+    });
+    
+    // Update page direction for RTL languages
+    if (lang === 'ar' || lang === 'ku') {
+        document.documentElement.dir = 'rtl';
+        document.body.style.textAlign = 'right';
+    } else {
+        document.documentElement.dir = 'ltr';
+        document.body.style.textAlign = 'left';
     }
-
-    .hero h1{
-        font-size:34px;
-    }
-
-    .hero h2{
-        font-size:22px;
-    }
-
-    #arena{
-        width:280px;
-        height:320px;
-    }
-
-    .card{
-        padding:25px;
-    }
-
-    [dir="rtl"] nav {
-        flex-direction: row;
-    }
-
 }
 
+// ==============================
+// Load Saved Language or Default
+// ==============================
 
+document.addEventListener('DOMContentLoaded', function() {
+    const savedLanguage = localStorage.getItem('language') || 'en';
+    document.getElementById('language').value = savedLanguage;
+    updateLanguage(savedLanguage);
+    
+    // Language selector event
+    document.getElementById('language').addEventListener('change', function() {
+        updateLanguage(this.value);
+    });
+});
+
+
+       
