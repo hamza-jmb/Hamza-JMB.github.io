@@ -4,62 +4,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title data-i18n="page_title">Hamza Jasim | Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1CC5Y9SY6H"></script>
+
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
+
         gtag('config', 'G-1CC5Y9SY6H');
     </script>
+
 </head>
 
 <body>
+
     <div style="text-align:right;padding:10px 20px;">
         <select id="language">
             <option value="en">🇺🇸 English</option>
             <option value="ar">🇮🇶 العربية</option>
-            <option value="de">🇩🇪11 Deutsch</option>
+            <option value="de">🇩🇪 Deutsch</option>
             <option value="ku">☀ كوردى</option>
         </select>
     </div>
 
+    <!-- ================= NAVBAR ================= -->
+
     <header>
-        <div class="logo">HB</div>
+
+        <div class="logo">
+            HB
+        </div>
+
         <nav>
+
             <a href="#about" data-i18n="nav_about">About</a>
+
             <a href="#skills" data-i18n="nav_skills">Skills</a>
+
             <a href="#projects" data-i18n="nav_projects">Projects</a>
+
             <a href="#contact" data-i18n="nav_contact">Contact</a>
+
         </nav>
+
     </header>
 
+    <!-- ================= HERO ================= -->
+
     <section class="hero">
-        <h1 id="name">Hamza J. M. Balchi</h1>
+
+        <h1 id="name">Hamza Jasim M. Balchi</h1>
+
         <h2 id="job" data-i18n="job_title">Control & Systems Engineer</h2>
-        <p class="subtitle" data-i18n="subtitle">Programmer • Automation • AI • Embedded Systems</p>
+
+        <p class="subtitle" data-i18n="subtitle">
+            Programmer • Automation • AI • Embedded Systems
+        </p>
+
     </section>
 
+    <!-- ================= UNDER DEVELOPMENT ================= -->
+
     <section class="notice">
-        <h2 data-i18n="under_dev_title">🚧 Portfolio Under Development</h2>
-        <p data-i18n="under_dev_p1">Welcome to the early version of my personal website. This portfolio is currently under construction. New projects, features, articles, and improvements will be added gradually.</p>
-        <div class="version"><span data-i18n="version_label">Version</span> : <strong>v0.2 Alpha</strong></div>
+
+        <h2 data-i18n="under_dev_title">
+            🚧 Portfolio Under Development
+        </h2>
+
+        <p data-i18n="under_dev_p1">
+            Welcome to the early version of my personal website.
+            This portfolio is currently under construction.
+            New projects, features, articles, and improvements will be added gradually.
+        </p>
+
+        <div class="version">
+            <span data-i18n="version_label">Version</span> : <strong>v0.2 Alpha</strong>
+        </div>
+
         <br>
+
         <div class="progress">
             <div class="progress-bar"></div>
         </div>
+
         <p data-i18n="progress_label">Progress : 40%</p>
+
     </section>
+
+    <!-- ================= ABOUT ================= -->
 
     <section id="about" class="card">
+
         <h2 data-i18n="about_title">👋 About Me</h2>
-        <p data-i18n="about_text">Hello! I'm Hamza Jasim, a Control & Systems Engineer from Iraq. I enjoy programming, automation, embedded systems, AI, and creating useful software and engineering projects.</p>
+
+        <p data-i18n="about_text">
+            Hello!
+            I'm Hamza Jasim,
+            a Control & Systems Engineer from Iraq.
+            I enjoy programming,
+            automation,
+            embedded systems,
+            AI,
+            and creating useful software and engineering projects.
+        </p>
+
     </section>
 
+    <!-- ================= SKILLS ================= -->
+
     <section id="skills" class="card">
+
         <h2 data-i18n="skills_title">🛠 Skills</h2>
+
         <div class="skills">
+
             <span>Python</span>
             <span>C++</span>
             <span>MATLAB</span>
@@ -71,40 +135,92 @@
             <span>GitHub</span>
             <span>Godot</span>
             <span>Linux</span>
+
         </div>
+
     </section>
+
+    <!-- ================= PROJECTS ================= -->
 
     <section id="projects" class="card">
+
         <h2 data-i18n="projects_title">📂 Projects</h2>
-        <p data-i18n="projects_coming">Coming Soon...</p>
+
+        <p data-i18n="projects_coming">
+            Coming Soon...
+        </p>
+
     </section>
 
+    <!-- ================= GAME ================= -->
+
     <section class="card">
-        <h2 data-i18n="game_title">🎮 Mini Game</h2>
-        <p data-i18n="game_desc1">While you're here... Touch the moving dot!</p>
-        <p><span data-i18n="game_desc2">Can you reach</span> <strong>15 points?</strong></p>
+
+        <h2 data-i18n="game_title">
+            🎮 Mini Game
+        </h2>
+
+        <p data-i18n="game_desc1">
+            While you're here...
+            Touch the moving dot!
+        </p>
+
+        <p>
+            <span data-i18n="game_desc2">Can you reach</span>
+            <strong>15 points?</strong>
+        </p>
+
         <div id="info">
-            <span data-i18n="game_score">Score</span> : <span id="s">0</span> | <span data-i18n="game_time">Time</span> : <span id="t">30</span>
+            <span data-i18n="game_score">Score</span> :
+            <span id="s">0</span>
+
+            |
+
+            <span data-i18n="game_time">Time</span> :
+            <span id="t">30</span>
         </div>
+
         <div id="arena">
             <div id="dot"></div>
         </div>
-        <button onclick="start()" data-i18n="btn_play_again">Play Again</button>
+
+        <button onclick="start()" data-i18n="btn_play_again">
+            Play Again
+        </button>
+
     </section>
+
+    <!-- ================= CONTACT ================= -->
 
     <section id="contact" class="card">
-        <h2 data-i18n="contact_title">📞 Contact</h2>
-        <p data-i18n="contact_p1">More contact methods will be added soon.</p>
-        <p>GitHub • LinkedIn • Email</p>
+
+        <h2 data-i18n="contact_title">
+            📞 Contact
+        </h2>
+
+        <p data-i18n="contact_p1">
+            More contact methods will be added soon.
+        </p>
+
+        <p>
+            GitHub
+            • LinkedIn
+            • Email
+        </p>
+
     </section>
 
+    <!-- ================= FOOTER ================= -->
+
     <footer>
-        © 2026 Hamza Jasim <br>
+        © 2026 Hamza Jasim
+        <br>
         <span data-i18n="footer_text">Built with HTML, CSS & JavaScript.</span>
     </footer>
 
     <script src="translations.js"></script>
     <script src="script.js"></script>
+
 </body>
+
 </html>
-    
