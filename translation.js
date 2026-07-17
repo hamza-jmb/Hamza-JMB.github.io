@@ -89,11 +89,8 @@ const translations = {
         
         about_title: "👋 دەربارەی",
         about_text: "سڵاو! من حمزە جاسم، ئەندازیاری کۆنترۆڵ و سیستەمەکانم لە عیراق. من بە بەرنامەسازی و خودکاری کردن و سیستەمە نهێنیەکان و تێکچوونی دەستکاری دڵگرم، و پروژە بەرنامەسازی و ئەندازیاری سوودبەخش دروست دەکەم.",
-
-
-
-
-skills_title: "🛠 تايبەتمەندى",
+        
+        skills_title: "🛠 تايبەتمەندى",
         projects_title: "📂 پروژەکان",
         projects_coming: "بە زووترە...",
         
@@ -190,6 +187,3 @@ document.addEventListener('DOMContentLoaded', function() {
         updateLanguage(this.value);
     });
 });
-
-
-       
