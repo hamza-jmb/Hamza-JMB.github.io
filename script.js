@@ -1,0 +1,152 @@
+// ==============================
+// Mini Game
+// ==============================
+
+let score = 0;
+let time = 30;
+
+let intv;
+let mv;
+
+const d = document.getElementById("dot");
+const s = document.getElementById("s");
+const t = document.getElementById("t");
+const a = document.getElementById("arena");
+
+// ==============================
+// Google Analytics Events
+// ==============================
+
+function track(eventName, data = {}) {
+
+    if (typeof gtag === "function") {
+
+        gtag("event", eventName, data);
+
+    }
+
+}
+
+// ==============================
+// Move Dot
+// ==============================
+
+function move() {
+
+    d.style.left = Math.random() * (a.clientWidth - 40) + "px";
+
+    d.style.top = Math.random() * (a.clientHeight - 40) + "px";
+
+}
+
+// ==============================
+// Click Dot
+// ==============================
+
+d.onclick = () => {
+
+    score++;
+
+    s.textContent = score;
+
+    move();
+
+    clearInterval(mv);
+
+    mv = setInterval(move, Math.max(250, 900 - score * 50));
+
+};
+
+// ==============================
+// Start Game
+// ==============================
+
+function start() {
+
+    track("game_start");
+
+    score = 0;
+
+    time = 30;
+
+    s.textContent = 0;
+
+    t.textContent = 30;
+
+    move();
+
+    clearInterval(intv);
+
+    clearInterval(mv);
+
+    mv = setInterval(move, 900);
+
+    intv = setInterval(() => {
+
+        time--;
+
+        t.textContent = time;
+
+        if (time <= 0) {
+
+            clearInterval(intv);
+
+            clearInterval(mv);
+
+            track("game_over", {
+
+                score: score
+
+            });
+
+            // Get current language for game over message
+            const currentLang = localStorage.getItem('language') || 'en';
+            const gameOverMessage = translations[currentLang].game_over + score;
+
+            alert(gameOverMessage);
+
+        }
+
+    }, 1000);
+
+}
+
+start();
+
+// ==============================
+// Play Again Event
+// ==============================
+
+const playButton = document.querySelector("button");
+
+if (playButton) {
+
+    playButton.addEventListener("click", () => {
+
+        track("play_again");
+
+    });
+
+}
+
+// ==============================
+// Scroll Tracking
+// ==============================
+
+let scrollTracked = false;
+
+window.addEventListener("scroll", () => {
+
+    if (scrollTracked) return;
+
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+
+        track("scroll_100");
+
+        scrollTracked = true;
+
+    }
+
+});
+
+console.log("Portfolio v0.2 Alpha Loaded Successfully");
