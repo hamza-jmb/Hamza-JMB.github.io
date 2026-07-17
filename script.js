@@ -148,33 +148,37 @@ window.addEventListener("scroll", () => {
 // ==============================
 // Language Button (Demo)
 // ==============================
-
 const language = document.getElementById("language");
 
 language.addEventListener("change", function () {
 
+    const job = document.getElementById("job");
+
     if (this.value === "en") {
 
-        alert("English");
+        job.textContent = "Control & Systems Engineer";
 
     }
 
     if (this.value === "ar") {
 
-        alert("العربية");
+        job.textContent = "مهندس سيطرة ونظم";
 
     }
 
     if (this.value === "de") {
 
-        alert("Deutsch");
+        job.textContent = "Control- und Systemingenieur";
 
     }
 
     if (this.value === "ku") {
 
-        alert("Kurdî");
+        job.textContent = "ئەندازیاری کۆنترۆڵ و سیستەمەکان";
 
+    }
+
+});
     }
 
 });
