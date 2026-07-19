@@ -15,7 +15,7 @@ const translations = {
         under_dev_title: "🚧 Portfolio Under Development",
         under_dev_p1: "Welcome to the early version of my personal website. This portfolio is currently under construction. New projects, features, articles, and improvements will be added gradually.",
         version_label: "Version",
-        progress_label: "Progress : 40%",
+        progress_label: "Progress : 44%",
         
         about_title: "👋 About Me",
         about_text: "Hello! I'm Hamza Jasim, a Control & Systems Engineer from Iraq. I enjoy programming, automation, embedded systems, AI, and creating useful software and engineering projects.",
@@ -50,7 +50,7 @@ const translations = {
         under_dev_title: "🚧 المحفظة قيد التطوير",
         under_dev_p1: "مرحبا بك في النسخة الأولى من موقعي الشخصي. محفظتي قيد الإنشاء حاليا. سيتم إضافة مشاريع وميزات وتحسينات جديدة تدريجياً.",
         version_label: "الإصدار",
-        progress_label: "التقدم : 40%",
+        progress_label: "التقدم : 46%",
         
         about_title: "👋 عني",
         about_text: "مرحبا! أنا حمزة جاسم، مهندس سيطرة ونظم من العراق. أستمتع بالبرمجة والأتمتة والأنظمة المدمجة والذكاء الاصطناعي، وإنشاء مشاريع برمجية وهندسية مفيدة.",
@@ -60,7 +60,7 @@ const translations = {
         projects_coming: "قريباً...",
         
         game_title: "🎮 لعبة صغيرة",
-        game_desc1: "بينما أنت هنا... لمس النقطة المتحركة!",
+        game_desc1: "بينما أنت هنا... المس النقطة المتحركة!",
         game_desc2: "هل يمكنك الوصول إلى",
         game_score: "النقاط",
         game_time: "الوقت",
@@ -85,7 +85,7 @@ const translations = {
         under_dev_title: "🚧 پۆرتفۆلیۆ لە ژێر کاردانەوە",
         under_dev_p1: "بەخێرهاتن بۆ وێبسایتی کەسی مت. پۆرتفۆلیۆی مت لە ژێر تۆمار دایە. پروژەکان و تايبەتمەندەکان و بەهێزکردنەکان بە هتوکۆ زیادکراون.",
         version_label: "وەشان",
-        progress_label: "پیشرەوە : 40%",
+        progress_label: "پیشرەوە : 45%",
         
         about_title: "👋 دەربارەی",
         about_text: "سڵاو! من حمزە جاسم، ئەندازیاری کۆنترۆڵ و سیستەمەکانم لە عیراق. من بە بەرنامەسازی و خودکاری کردن و سیستەمە نهێنیەکان و تێکچوونی دەستکاری دڵگرم، و پروژە بەرنامەسازی و ئەندازیاری سوودبەخش دروست دەکەم.",
@@ -120,7 +120,7 @@ const translations = {
         under_dev_title: "🚧 Portfolio in Entwicklung",
         under_dev_p1: "Willkommen zur frühen Version meiner persönlichen Website. Mein Portfolio befindet sich derzeit im Aufbau. Neue Projekte, Funktionen, Artikel und Verbesserungen werden nach und nach hinzugefügt.",
         version_label: "Version",
-        progress_label: "Fortschritt : 40%",
+        progress_label: "Fortschritt : 47%",
         
         about_title: "👋 Über mich",
         about_text: "Hallo! Ich bin Hamza Jasim, ein Control- und Systemingenieur aus dem Irak. Ich begeistere mich für Programmierung, Automatisierung, eingebettete Systeme, KI und die Erstellung nützlicher Software- und Ingenieurprojekte.",
